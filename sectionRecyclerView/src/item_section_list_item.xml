@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/item_calendar_list_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="周年"
+            />
+
+        <TextView
+            android:id="@+id/item_calendar_list_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="顺蔓摸瓜的要入职了"
+            android:paddingLeft="8dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
