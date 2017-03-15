@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="eebochina.com.testtechniques.nestedScroll.NestedScrollActivity">
+
+
+    <eebochina.com.testtechniques.nestedScroll.NestedParent
+        android:id="@+id/nested_scroll_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/gray_white"
+                android:focusableInTouchMode="true"
+                android:text="this is scrollView"
+                android:gravity="center"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/nested_scroll_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </eebochina.com.testtechniques.nestedScroll.NestedParent>
+
+</LinearLayout>
